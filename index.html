@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+        html {
+            font-family: Arimo !important;
+        }
+
+        .grad {
+            background-image: linear-gradient(175deg,
+                    hsl(190deg 90% 70%) 0%,
+                    hsl(196deg 79% 66%) 9%,
+                    hsl(203deg 71% 61%) 19%,
+                    hsl(210deg 65% 56%) 31%,
+                    hsl(220deg 62% 49%) 48%,
+                    hsl(227deg 73% 43%) 66%,
+                    hsl(228deg 74% 39%) 79%,
+                    hsl(228deg 75% 34%) 87%,
+                    hsl(230deg 79% 29%) 94%,
+                    hsl(232deg 94% 21%) 100%);
+        }
+    </style>
+</head>
+
+<body class="h-screen grad flex flex-col">
+
+    <p class="text-4xl text-center mt-6 text-sky-50">New York</p>
+    <p class="text-2xl text-center mt-2 text-sky-50">Today's weather</p>
+    <div class="w-3/4 items-center md:w-2/4 mx-auto p-2 text-center flex flex-wrap justify-center">
+        <img src="https://openweathermap.org/img/wn/11d@2x.png" class="inline-block h-32 md:h-28" alt="">
+        <p class="text-6xl md:text-7xl md:translate-y-6 text-center bg-clip-text text-transparent bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-sky-100 
+        via-blue-300 translate-y-2 md:mb-[3.7rem]">23°</p>
+
+    </div>
+    <div
+        class="w-3/4 items-center md:w-2/4 mx-auto px-2 xl:px-64 grid grid-cols-2  justify-center text-center justify-items-center">
+        <svg class="h-12 text-sky-500" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M4,10A1,1 0 0,1 3,9A1,1 0 0,1 4,8H12A2,2 0 0,0 14,6A2,2 0 0,0 12,4C11.45,4 10.95,4.22 10.59,4.59C10.2,5 9.56,5 9.17,4.59C8.78,4.2 8.78,3.56 9.17,3.17C9.9,2.45 10.9,2 12,2A4,4 0 0,1 16,6A4,4 0 0,1 12,10H4M19,12A1,1 0 0,0 20,11A1,1 0 0,0 19,10C18.72,10 18.47,10.11 18.29,10.29C17.9,10.68 17.27,10.68 16.88,10.29C16.5,9.9 16.5,9.27 16.88,8.88C17.42,8.34 18.17,8 19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14H5A1,1 0 0,1 4,13A1,1 0 0,1 5,12H19M18,18H4A1,1 0 0,1 3,17A1,1 0 0,1 4,16H18A3,3 0 0,1 21,19A3,3 0 0,1 18,22C17.17,22 16.42,21.66 15.88,21.12C15.5,20.73 15.5,20.1 15.88,19.71C16.27,19.32 16.9,19.32 17.29,19.71C17.47,19.89 17.72,20 18,20A1,1 0 0,0 19,19A1,1 0 0,0 18,18Z" />
+        </svg>
+        <p class="bg-gradient-to-r from-cyan-300 to-sky-100 bg-clip-text text-center text-3xl text-transparent">23°</p>
+
+        <svg class="text-sky-500 h-12" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M12,20A6,6 0 0,1 6,14C6,10 12,3.25 12,3.25C12,3.25 18,10 18,14A6,6 0 0,1 12,20Z" />
+        </svg>
+        <p class="text-3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-sky-100 
+        via-blue-300">23°</p>
+    </div>
+
+
+</body>
+
+<script>
+
+
+
+</script>
+
+</html>
